@@ -32,11 +32,12 @@ export function Podologia() {
         <div className="flex flex-col gap-16 lg:gap-24">
           {/* ─── Cura Podologica Strumentale ─── */}
           <div className="grid items-start gap-8 lg:grid-cols-2">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border">
+            <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border">
               <Image
                 src="/images/immagini_nuovo_sito/Podologia-cura podologica strumentale.JPG"
                 alt="Cura podologica strumentale"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
@@ -91,11 +92,12 @@ export function Podologia() {
                 Questo trattamento, non invasivo e indolore, fornisce un sollievo al paziente a lungo termine. Inoltre, il dispositivo utilizzato è poco ingombrante e poco visibile, adattandosi facilmente alle varie tipologie di calzature.
               </p>
             </div>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border">
+            <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border">
               <Image
                 src="/images/immagini_nuovo_sito/ortonixia rieducazione ungueale.JPG"
                 alt="Ortonixia - rieducazione ungueale"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
@@ -103,11 +105,12 @@ export function Podologia() {
 
           {/* ─── Ortesi ─── */}
           <div className="grid items-start gap-8 lg:grid-cols-2">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border">
+            <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border">
               <Image
                 src="/images/immagini_nuovo_sito/podologia_ortesi.jpg"
                 alt="Ortesi siliconiche su misura"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
@@ -141,11 +144,12 @@ export function Podologia() {
                   I nostri interventi mirati affrontano patologie specifiche del piede di origine traumatica, infiammatoria o infettiva (verruche plantari, onicomicosi, micosi cutanee). Grazie a protocolli clinici avanzati, risolviamo i disturbi che colpiscono la salute e la mobilità del paziente.
                 </p>
               </div>
-              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border">
+              <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border">
                 <Image
                   src="/images/immagini_nuovo_sito/podologia-trattamenti mirati.JPG"
                   alt="Trattamenti podologici mirati"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>

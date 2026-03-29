@@ -33,11 +33,12 @@ export function IgieneDentale() {
         <div className="flex flex-col gap-16 lg:gap-24">
           {/* ─── Trattamento Igiene Dentale ─── */}
           <div className="grid items-start gap-8 lg:grid-cols-2">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border">
+            <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border">
               <Image
                 src="/images/immagini_nuovo_sito/igiene dentale.jpg"
                 alt="Trattamento igiene dentale professionale"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
@@ -124,11 +125,12 @@ export function IgieneDentale() {
                 Per garantire la massima precisione e il miglior comfort al paziente, il trattamento viene solitamente suddiviso in più sedute, permettendoci di monitorare costantemente i progressi e la rigenerazione dei tessuti.
               </p>
             </div>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border">
+            <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border">
               <Image
                 src="/images/immagini_nuovo_sito/igiene dentale- trattamento non chirurgico.jpg"
                 alt="Trattamento parodontale non chirurgico"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
@@ -136,11 +138,12 @@ export function IgieneDentale() {
 
           {/* ─── Brillantino Dentale ─── */}
           <div className="grid items-start gap-8 lg:grid-cols-2">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border">
+            <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border">
               <Image
                 src="/images/immagini_nuovo_sito/Brillantino dentale.jpg"
                 alt="Applicazione gioiello dentale"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
@@ -193,7 +196,16 @@ export function IgieneDentale() {
 
           {/* ─── Sbiancamento Dentale ─── */}
           <div className="flex flex-col gap-8">
-            <div className="grid items-start gap-8 lg:grid-cols-2">
+            <div className="flex flex-col gap-8">
+              <div className="relative aspect-[16/9] max-h-48 overflow-hidden rounded-2xl border border-border">
+                <Image
+                  src="/images/immagini_nuovo_sito/igiene dentale-sbiancamento1.webp"
+                  alt="Sbiancamento dentale professionale"
+                  fill
+                  sizes="100vw"
+                  className="object-cover"
+                />
+              </div>
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-2">
                   <Sun className="h-6 w-6 text-lavender" />
@@ -205,14 +217,6 @@ export function IgieneDentale() {
                 <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
                   Il desiderio di un sorriso più bianco e luminoso può essere soddisfatto attraverso diverse metodologie cliniche. Presso il nostro studio, offriamo soluzioni personalizzate basate sulle tue esigenze di tempo e sui risultati desiderati, garantendo sempre la massima sicurezza per lo smalto.
                 </p>
-              </div>
-              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border">
-                <Image
-                  src="/images/immagini_nuovo_sito/igiene dentale-sbiancamento1.webp"
-                  alt="Sbiancamento dentale professionale"
-                  fill
-                  className="object-cover"
-                />
               </div>
             </div>
 
@@ -250,6 +254,15 @@ export function IgieneDentale() {
                 <p className="mb-3 text-sm font-medium text-lavender-foreground">
                   Perfetto per chi ha poco tempo o desidera un cambiamento estetico immediato.
                 </p>
+                <div className="relative mb-4 aspect-[3/2] overflow-hidden rounded-xl">
+                  <Image
+                    src="/images/immagini_nuovo_sito/sbiancamento dentale in-office .JPG"
+                    alt="Sbiancamento dentale in-office con lampada professionale"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
                 <ul className="flex flex-col gap-2">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-lavender" />

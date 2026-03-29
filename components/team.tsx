@@ -57,12 +57,16 @@ export function Team() {
               className="flex flex-1 flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
             >
               {/* Photo */}
-              <div className="relative h-72 w-full shrink-0">
+              <div className="relative h-96 w-full shrink-0 sm:h-[28rem]">
                 <Image
                   src={member.image}
                   alt={`${member.name}, ${member.role}`}
                   fill
-                  className="object-cover object-[50%_30%]"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover object-[center_20%]"
+                  quality={100}
+                  unoptimized
+                  priority
                 />
               </div>
 

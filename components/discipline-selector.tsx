@@ -41,6 +41,7 @@ export function DisciplineSelector() {
                 src="/images/immagini_nuovo_sito/Home-igiene dentale scopri di più.JPG"
                 alt="Igiene dentale - scopri di più"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </div>
@@ -82,6 +83,7 @@ export function DisciplineSelector() {
                 src="/images/immagini_nuovo_sito/Home- podologia scopri di piu.JPG"
                 alt="Podologia - scopri di più"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </div>

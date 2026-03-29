@@ -13,6 +13,7 @@ export function Hero() {
             src="/images/immagini_nuovo_sito/1.Home1 Marti&Polo.JPG"
             alt="Martina e Paolo Rusconi, Studio Rusconi"
             fill
+            sizes="100vw"
             className="object-cover object-top"
             priority
           />
@@ -89,6 +90,7 @@ export function Hero() {
               src="/images/immagini_nuovo_sito/1.Home1 Marti&Polo.JPG"
               alt="Martina e Paolo Rusconi, Studio Rusconi"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover object-top"
               priority
             />
