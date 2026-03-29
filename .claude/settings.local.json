@@ -5,7 +5,9 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(identify \"public/images/immagini_nuovo_sito/marti senza pallino.jpg\" \"public/images/immagini_nuovo_sito/Paolo.jpg\")",
+      "Bash(sips -g pixelWidth -g pixelHeight \"public/images/immagini_nuovo_sito/marti senza pallino.jpg\" \"public/images/immagini_nuovo_sito/Paolo.jpg\")"
     ]
   }
 }
