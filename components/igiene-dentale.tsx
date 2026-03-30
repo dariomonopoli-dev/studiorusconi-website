@@ -196,7 +196,16 @@ export function IgieneDentale() {
 
           {/* ─── Sbiancamento Dentale ─── */}
           <div className="flex flex-col gap-8">
-            <div className="flex flex-col gap-8">
+            <div className="grid items-start gap-8 lg:grid-cols-2">
+              <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border">
+                <Image
+                  src="/images/immagini_nuovo_sito/igiene dentale-sbiancamento1.webp"
+                  alt="Sorriso luminoso dopo sbiancamento dentale professionale"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-2">
                   <Sun className="h-6 w-6 text-teal" />

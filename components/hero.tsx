@@ -10,7 +10,7 @@ export function Hero() {
       <div className="relative mx-auto w-full md:hidden">
         <div className="relative aspect-[4/3] w-full overflow-hidden">
           <Image
-            src="/images/immagini_nuovo_sito/1.Home1 Marti&Polo.JPG"
+            src="/images/immagini_nuovo_sito/foto_insieme_nuova.JPG"
             alt="Martina e Paolo Rusconi, Studio Rusconi"
             fill
             sizes="100vw"
@@ -87,7 +87,7 @@ export function Hero() {
         <div className="hidden items-center justify-center md:flex lg:justify-end">
           <div className="relative aspect-[3/4] w-full max-w-md overflow-hidden rounded-2xl border border-border shadow-lg">
             <Image
-              src="/images/immagini_nuovo_sito/1.Home1 Marti&Polo.JPG"
+              src="/images/immagini_nuovo_sito/foto_insieme_nuova.JPG"
               alt="Martina e Paolo Rusconi, Studio Rusconi"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"

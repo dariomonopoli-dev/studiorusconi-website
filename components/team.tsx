@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
-import { ExternalLink } from "lucide-react"
+import { ExternalLink, Download } from "lucide-react"
 
 const team = [
   {
     name: "Martina Rusconi",
     role: "Igienista dentale SSS",
-    image: "/images/immagini_nuovo_sito/marti senza pallino.jpg",
+    image: "/images/immagini_nuovo_sito/Martina_nuova.jpeg",
     bio: "Sono una professionista d'esperienza capace di coniugare l'aspetto tecnico e scientifico relativo alla medicina dentaria con la dimensione prettamente umana propria alle professioni medicali. Oltre ad avere delle conoscenze solide, delle abilità manuali d'eccellenza, riesco ad instaurare un clima di fiducia con i miei pazienti in modo da rispondere al meglio ai bisogni della persona.",
     experience: "Ho sviluppato un bagaglio di competenze molto variato grazie alle esperienze lavorative d'eccezione nel campo dell'insegnamento, della medicina umana, umanitaria e dentaria.",
     credentials: [
@@ -24,7 +24,7 @@ const team = [
   {
     name: "Paolo Rusconi",
     role: "Podologo dipl. federale",
-    image: "/images/immagini_nuovo_sito/Paolo.jpg",
+    image: "/images/immagini_nuovo_sito/Paolo_nuova.jpeg",
     bio: "Sono un professionista meticoloso e preciso nelle cure della persona. Mi applico affinché si trovi la migliore soluzione per alleviare le pene dei miei pazienti. La prevenzione è un pilastro fondamentale per la salute generale soprattutto dei pazienti che soffrono di malattie croniche. Per questa ragione ritengo importante una presa a carico accurata e tempestiva.",
     experience: "",
     credentials: [
@@ -122,25 +122,37 @@ export function Team() {
                     </Badge>
                   ))}
                 </div>
-                <Button
-                  variant="outline"
-                  className={`mt-auto w-full sm:w-fit ${
-                    member.accent === "teal"
-                      ? "border-teal/40 hover:bg-teal/10"
-                      : "border-lavender/40 hover:bg-lavender/10"
-                  }`}
-                  asChild
-                >
-                  {member.accent === "teal" ? (
-                    <a href="https://book.agenda.ch/services?companyId=17111" target="_blank" rel="noopener noreferrer">
-                      {"Prenota con " + member.name.split(" ")[0]}
+                <div className="mt-auto flex flex-col gap-2 sm:flex-row">
+                  <Button
+                    variant="outline"
+                    className={`w-full sm:w-fit ${
+                      member.accent === "teal"
+                        ? "border-teal/40 hover:bg-teal/10"
+                        : "border-lavender/40 hover:bg-lavender/10"
+                    }`}
+                    asChild
+                  >
+                    {member.accent === "teal" ? (
+                      <a href="https://book.agenda.ch/services?companyId=17111" target="_blank" rel="noopener noreferrer">
+                        {"Prenota con " + member.name.split(" ")[0]}
+                      </a>
+                    ) : (
+                      <a href="tel:+41912251240">
+                        {"Prenota con " + member.name.split(" ")[0]}
+                      </a>
+                    )}
+                  </Button>
+                  <Button
+                    variant="outline"
+                    className="w-full gap-2 sm:w-fit"
+                    asChild
+                  >
+                    <a href="/biglietto-da-visita.pdf" download>
+                      <Download className="h-4 w-4" />
+                      Biglietto da visita e tariffe
                     </a>
-                  ) : (
-                    <a href="tel:+41912251240">
-                      {"Prenota con " + member.name.split(" ")[0]}
-                    </a>
-                  )}
-                </Button>
+                  </Button>
+                </div>
               </div>
             </div>
           ))}

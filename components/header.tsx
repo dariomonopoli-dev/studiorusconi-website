@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Phone, Menu, X } from "lucide-react"
+import Image from "next/image"
 
 const navLinks = [
   { label: "Home", href: "#" },
@@ -20,12 +21,14 @@ export function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-            <span className="text-sm font-bold text-primary-foreground">SR</span>
-          </span>
-          <span className="text-lg font-semibold tracking-tight text-foreground">
-            Studio Rusconi
-          </span>
+          <Image
+            src="/images/immagini_nuovo_sito/logo_final.png"
+            alt="Studio Rusconi"
+            width={160}
+            height={64}
+            className="h-10 w-auto"
+            priority
+          />
         </a>
 
         {/* Desktop nav */}

@@ -1,4 +1,5 @@
 import { Separator } from "@/components/ui/separator"
+import Image from "next/image"
 
 const quickLinks = [
   { label: "Home", href: "#" },
@@ -22,12 +23,13 @@ export function Footer() {
           {/* Brand */}
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-2">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-                <span className="text-xs font-bold text-primary-foreground">SR</span>
-              </span>
-              <span className="text-base font-semibold text-foreground">
-                Studio Rusconi
-              </span>
+              <Image
+                src="/images/immagini_nuovo_sito/logo_final.png"
+                alt="Studio Rusconi"
+                width={140}
+                height={56}
+                className="h-9 w-auto"
+              />
             </div>
             <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
               Igiene dentale e podologia nel cuore di Lugano. Professionalità,
