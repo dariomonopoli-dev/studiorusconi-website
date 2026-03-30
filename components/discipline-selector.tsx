@@ -34,7 +34,7 @@ export function DisciplineSelector() {
           {/* Igiene dentale panel */}
           <a
             href="#igiene-dentale"
-            className="group relative flex flex-col gap-4 overflow-hidden rounded-2xl border border-border bg-lavender-light transition-shadow hover:shadow-lg sm:gap-5"
+            className="group relative flex flex-col gap-4 overflow-hidden rounded-2xl border border-border bg-teal-light transition-shadow hover:shadow-lg sm:gap-5"
           >
             <div className="relative aspect-[16/9] w-full overflow-hidden">
               <Image
@@ -61,13 +61,13 @@ export function DisciplineSelector() {
                   <Badge
                     key={chip}
                     variant="secondary"
-                    className="border-lavender/30 bg-card px-2 py-0.5 text-xs text-foreground sm:px-2.5 sm:py-1"
+                    className="border-teal/30 bg-card px-2 py-0.5 text-xs text-foreground sm:px-2.5 sm:py-1"
                   >
                     {chip}
                   </Badge>
                 ))}
               </div>
-              <Button variant="outline" className="mt-auto w-full border-lavender/40 text-foreground hover:bg-lavender/10 sm:w-fit" tabIndex={-1}>
+              <Button variant="outline" className="mt-auto w-full border-teal/40 text-foreground hover:bg-teal/10 sm:w-fit" tabIndex={-1}>
                 Scopri i servizi
               </Button>
             </div>
@@ -76,7 +76,7 @@ export function DisciplineSelector() {
           {/* Podologia panel */}
           <a
             href="#podologia"
-            className="group relative flex flex-col gap-4 overflow-hidden rounded-2xl border border-border bg-teal-light transition-shadow hover:shadow-lg sm:gap-5"
+            className="group relative flex flex-col gap-4 overflow-hidden rounded-2xl border border-border bg-lavender-light transition-shadow hover:shadow-lg sm:gap-5"
           >
             <div className="relative aspect-[16/9] w-full overflow-hidden">
               <Image
@@ -103,13 +103,13 @@ export function DisciplineSelector() {
                   <Badge
                     key={chip}
                     variant="secondary"
-                    className="border-teal/30 bg-card px-2 py-0.5 text-xs text-foreground sm:px-2.5 sm:py-1"
+                    className="border-lavender/30 bg-card px-2 py-0.5 text-xs text-foreground sm:px-2.5 sm:py-1"
                   >
                     {chip}
                   </Badge>
                 ))}
               </div>
-              <Button variant="outline" className="mt-auto w-full border-teal/40 text-foreground hover:bg-teal/10 sm:w-fit" tabIndex={-1}>
+              <Button variant="outline" className="mt-auto w-full border-lavender/40 text-foreground hover:bg-lavender/10 sm:w-fit" tabIndex={-1}>
                 Scopri i servizi
               </Button>
             </div>

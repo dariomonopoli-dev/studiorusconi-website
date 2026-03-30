@@ -16,7 +16,13 @@
       "Bash(done)",
       "Bash(ls -lh *.jpg *.JPG *.jpeg *.png *.webp)",
       "Bash(node:*)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(ls:*)",
+      "Bash(sips:*)",
+      "Bash(python3 -c \"from PIL import Image; print\\(''PIL available''\\)\")",
+      "Bash(python3 -c \"import rembg; print\\(''rembg available''\\)\")",
+      "Bash(pip3 install:*)",
+      "Bash(python3:*)"
     ]
   }
 }

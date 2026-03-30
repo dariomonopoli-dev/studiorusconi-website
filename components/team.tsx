@@ -19,7 +19,7 @@ const team = [
       "2010-2021 – Igienista dentale presso i Dottori Moor, Lugano",
     ],
     languages: ["Italiano", "Tedesco", "Inglese"],
-    accent: "lavender" as const,
+    accent: "teal" as const,
   },
   {
     name: "Paolo Rusconi",
@@ -33,7 +33,7 @@ const team = [
       "2014-2021 – Docente di podologia presso il CPS Lugano",
     ],
     languages: ["Italiano", "Francese", "Inglese"],
-    accent: "teal" as const,
+    accent: "lavender" as const,
   },
 ]
 
@@ -131,7 +131,7 @@ export function Team() {
                   }`}
                   asChild
                 >
-                  {member.accent === "lavender" ? (
+                  {member.accent === "teal" ? (
                     <a href="https://book.agenda.ch/services?companyId=17111" target="_blank" rel="noopener noreferrer">
                       {"Prenota con " + member.name.split(" ")[0]}
                     </a>

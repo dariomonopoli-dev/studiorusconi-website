@@ -116,7 +116,7 @@ export function Services() {
           {/* Igiene dentale column */}
           <div>
             <div className="mb-6 flex items-center gap-2">
-              <span className="h-1 w-6 rounded-full bg-lavender" />
+              <span className="h-1 w-6 rounded-full bg-teal" />
               <h3 className="text-lg font-semibold text-foreground">
                 Igiene Dentale
               </h3>
@@ -126,7 +126,7 @@ export function Services() {
                 <ServiceCard
                   key={service.title}
                   {...service}
-                  accentColor="lavender"
+                  accentColor="teal"
                 />
               ))}
             </div>
@@ -135,7 +135,7 @@ export function Services() {
           {/* Podologia column */}
           <div>
             <div className="mb-6 flex items-center gap-2">
-              <span className="h-1 w-6 rounded-full bg-teal" />
+              <span className="h-1 w-6 rounded-full bg-lavender" />
               <h3 className="text-lg font-semibold text-foreground">
                 Podologia
               </h3>
@@ -145,7 +145,7 @@ export function Services() {
                 <ServiceCard
                   key={service.title}
                   {...service}
-                  accentColor="teal"
+                  accentColor="lavender"
                 />
               ))}
             </div>

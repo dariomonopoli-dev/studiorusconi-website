@@ -18,12 +18,12 @@ export function IgieneDentale() {
         {/* Section header */}
         <div className="mb-12 text-center">
           <div className="mb-4 flex items-center justify-center gap-2">
-            <span className="h-1 w-8 rounded-full bg-lavender" />
-            <Badge className="gap-1.5 bg-lavender/10 text-lavender-foreground hover:bg-lavender/10">
+            <span className="h-1 w-8 rounded-full bg-teal" />
+            <Badge className="gap-1.5 bg-teal/10 text-teal-foreground hover:bg-teal/10">
               <span className="text-lg">🦷</span>
               Igiene Dentale
             </Badge>
-            <span className="h-1 w-8 rounded-full bg-lavender" />
+            <span className="h-1 w-8 rounded-full bg-teal" />
           </div>
           <h2 className="text-balance font-serif text-3xl font-bold text-foreground md:text-4xl">
             I nostri trattamenti di igiene dentale
@@ -44,7 +44,7 @@ export function IgieneDentale() {
             </div>
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-2">
-                <ShieldCheck className="h-6 w-6 text-lavender" />
+                <ShieldCheck className="h-6 w-6 text-teal" />
                 <h3 className="font-serif text-2xl font-bold text-foreground">
                   Trattamento igiene dentale
                 </h3>
@@ -54,35 +54,35 @@ export function IgieneDentale() {
               </p>
               <ul className="flex flex-col gap-3">
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-lavender" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
                   <div>
                     <p className="text-sm font-semibold text-foreground">Aggiornamento dell&apos;anamnesi medica</p>
                     <p className="text-sm text-muted-foreground">Valutazione dello stato di salute generale per agire in totale sicurezza.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-lavender" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
                   <div>
                     <p className="text-sm font-semibold text-foreground">Screening completo del cavo orale</p>
                     <p className="text-sm text-muted-foreground">Un controllo accurato per la diagnosi precoce di carie, analisi delle mucose e valutazione della salute parodontale.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-lavender" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
                   <div>
                     <p className="text-sm font-semibold text-foreground">Ablazione del tartaro (Detartrasi)</p>
                     <p className="text-sm text-muted-foreground">Rimozione professionale del tartaro sopra e sotto-gengivale per prevenire gengiviti e parodontiti.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-lavender" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
                   <div>
                     <p className="text-sm font-semibold text-foreground">Estetica e Lucidatura (Polishing)</p>
                     <p className="text-sm text-muted-foreground">Rimozione delle macchie dentali superficiali causate da fumo, caffè o tè, per restituire la naturale brillantezza e il bianco originario ai tuoi denti.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-lavender" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
                   <div>
                     <p className="text-sm font-semibold text-foreground">Protezione e Remineralizzazione dello smalto</p>
                     <p className="text-sm text-muted-foreground">Applicazione professionale di prodotti ad alta concentrazione di fluoro o idrossiapatite per rinforzare lo smalto dentale e ridurre le sensibilità.</p>
@@ -96,7 +96,7 @@ export function IgieneDentale() {
           <div className="grid items-start gap-8 lg:grid-cols-2">
             <div className="order-1 flex flex-col gap-4 lg:order-none">
               <div className="flex items-center gap-2">
-                <Sparkles className="h-6 w-6 text-lavender" />
+                <Sparkles className="h-6 w-6 text-teal" />
                 <h3 className="font-serif text-2xl font-bold text-foreground">
                   Trattamento parodontale non chirurgico
                 </h3>
@@ -109,15 +109,15 @@ export function IgieneDentale() {
               </p>
               <ul className="flex flex-col gap-3">
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-lavender" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
                   <p className="text-sm text-muted-foreground">Rimuovere accuratamente i depositi di tartaro sub-gengivale.</p>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-lavender" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
                   <p className="text-sm text-muted-foreground">Ridurre drasticamente la carica batterica.</p>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-lavender" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
                   <p className="text-sm text-muted-foreground">Levigare le radici dei denti per favorire una naturale guarigione delle gengive.</p>
                 </li>
               </ul>
@@ -149,7 +149,7 @@ export function IgieneDentale() {
             </div>
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-2">
-                <Gem className="h-6 w-6 text-lavender" />
+                <Gem className="h-6 w-6 text-teal" />
                 <h3 className="font-serif text-2xl font-bold text-foreground">
                   Applicazione gioiello dentale
                 </h3>
@@ -163,28 +163,28 @@ export function IgieneDentale() {
               </p>
               <ul className="flex flex-col gap-3">
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-lavender" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
                   <div>
                     <p className="text-sm font-semibold text-foreground">Rispetto del dente</p>
                     <p className="text-sm text-muted-foreground">Il brillantino viene applicato sulla superficie esterna del dente tramite una tecnica sicura di adesione professionale, senza intaccare lo smalto.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-lavender" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
                   <div>
                     <p className="text-sm font-semibold text-foreground">Trattamento indolore</p>
                     <p className="text-sm text-muted-foreground">L&apos;applicazione è rapida, non invasiva e assolutamente indolore.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-lavender" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
                   <div>
                     <p className="text-sm font-semibold text-foreground">Massima flessibilità</p>
                     <p className="text-sm text-muted-foreground">Il gioiello può essere rimosso in qualsiasi momento, restituendo al dente il suo aspetto originario senza lasciarne traccia.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-lavender" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
                   <div>
                     <p className="text-sm font-semibold text-foreground">Luminosità immediata</p>
                     <p className="text-sm text-muted-foreground">Un piccolo punto luce che valorizza l&apos;estetica del tuo sorriso in pochi minuti.</p>
@@ -197,23 +197,14 @@ export function IgieneDentale() {
           {/* ─── Sbiancamento Dentale ─── */}
           <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-8">
-              <div className="relative aspect-[16/9] max-h-48 overflow-hidden rounded-2xl border border-border">
-                <Image
-                  src="/images/immagini_nuovo_sito/igiene dentale-sbiancamento1.webp"
-                  alt="Sbiancamento dentale professionale"
-                  fill
-                  sizes="100vw"
-                  className="object-cover"
-                />
-              </div>
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-2">
-                  <Sun className="h-6 w-6 text-lavender" />
+                  <Sun className="h-6 w-6 text-teal" />
                   <h3 className="font-serif text-2xl font-bold text-foreground">
                     Sbiancamento Dentale Professionale
                   </h3>
                 </div>
-                <p className="text-sm font-medium text-lavender-foreground">Scegli il Trattamento Ideale per Te</p>
+                <p className="text-sm font-medium text-teal-foreground">Scegli il Trattamento Ideale per Te</p>
                 <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
                   Il desiderio di un sorriso più bianco e luminoso può essere soddisfatto attraverso diverse metodologie cliniche. Presso il nostro studio, offriamo soluzioni personalizzate basate sulle tue esigenze di tempo e sui risultati desiderati, garantendo sempre la massima sicurezza per lo smalto.
                 </p>
@@ -223,35 +214,35 @@ export function IgieneDentale() {
             {/* Sub-treatments grid */}
             <div className="grid gap-6 md:grid-cols-2">
               {/* Home Bleaching */}
-              <div className="rounded-2xl border border-lavender/20 bg-lavender-light p-6">
+              <div className="rounded-2xl border border-teal/20 bg-teal-light p-6">
                 <h4 className="mb-3 text-lg font-bold text-foreground">
                   Sbiancamento Dentale Domiciliare (Home Bleaching)
                 </h4>
-                <p className="mb-3 text-sm font-medium text-lavender-foreground">
+                <p className="mb-3 text-sm font-medium text-teal-foreground">
                   La soluzione ideale per chi cerca un risultato stabile e duraturo nel tempo.
                 </p>
                 <ul className="flex flex-col gap-2">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-lavender" />
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-teal" />
                     <p className="text-sm text-muted-foreground"><strong className="text-foreground">Come funziona:</strong> Ti forniamo un kit professionale con prodotti a bassa concentrazione, da applicare circa 60 minuti al giorno oppure durante la notte per alcuni giorni.</p>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-lavender" />
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-teal" />
                     <p className="text-sm text-muted-foreground"><strong className="text-foreground">Vantaggi:</strong> L&apos;azione graduale del principio attivo assicura una brillantezza profonda. Richiede costanza nell&apos;applicazione, ma i risultati sono tra i più persistenti.</p>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-lavender" />
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-teal" />
                     <p className="text-sm text-muted-foreground"><strong className="text-foreground">Nota:</strong> La fattibilità del trattamento verrà valutata insieme al tuo professionista di fiducia durante la visita specialistica.</p>
                   </li>
                 </ul>
               </div>
 
               {/* In-Office */}
-              <div className="rounded-2xl border border-lavender/20 bg-lavender-light p-6">
+              <div className="rounded-2xl border border-teal/20 bg-teal-light p-6">
                 <h4 className="mb-3 text-lg font-bold text-foreground">
                   Sbiancamento Dentale in Studio (In-Office)
                 </h4>
-                <p className="mb-3 text-sm font-medium text-lavender-foreground">
+                <p className="mb-3 text-sm font-medium text-teal-foreground">
                   Perfetto per chi ha poco tempo o desidera un cambiamento estetico immediato.
                 </p>
                 <div className="relative mb-4 aspect-[3/2] overflow-hidden rounded-xl">
@@ -265,11 +256,11 @@ export function IgieneDentale() {
                 </div>
                 <ul className="flex flex-col gap-2">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-lavender" />
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-teal" />
                     <p className="text-sm text-muted-foreground"><strong className="text-foreground">Come funziona:</strong> Utilizziamo gel ad alta concentrazione per un tempo ridotto sotto costante supervisione professionale.</p>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-lavender" />
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-teal" />
                     <p className="text-sm text-muted-foreground"><strong className="text-foreground">Vantaggi:</strong> Risultato istantaneo, ideale in vista di eventi importanti o per chi preferisce non dover gestire il trattamento domiciliare.</p>
                   </li>
                 </ul>
@@ -283,11 +274,11 @@ export function IgieneDentale() {
                 I trattamenti possono essere combinati per massimizzare l&apos;efficacia. Ecco le nostre opzioni rapide ed intensive:
               </p>
               <div className="grid gap-4 md:grid-cols-2">
-                <div className="rounded-xl border border-lavender/20 bg-lavender-light/50 p-4">
+                <div className="rounded-xl border border-teal/20 bg-teal-light/50 p-4">
                   <p className="text-sm font-semibold text-foreground">Trattamento Click</p>
                   <p className="mt-1 text-sm text-muted-foreground">La soluzione &quot;smart&quot;: si effettua subito dopo la seduta di igiene dentale (detartrasi) per un tocco di luce immediato.</p>
                 </div>
-                <div className="rounded-xl border border-lavender/20 bg-lavender-light/50 p-4">
+                <div className="rounded-xl border border-teal/20 bg-teal-light/50 p-4">
                   <p className="text-sm font-semibold text-foreground">Trattamento Intensivo</p>
                   <p className="mt-1 text-sm text-muted-foreground">Il protocollo d&apos;urto: prevede una sessione di circa 90 minuti per ottenere il massimo grado di schiaritura possibile in una sola seduta.</p>
                 </div>
@@ -326,7 +317,7 @@ export function IgieneDentale() {
           {/* CTA */}
           <div className="flex justify-center">
             <a href="https://book.agenda.ch/services?companyId=17111" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="gap-2 bg-lavender text-lavender-foreground hover:bg-lavender/90">
+              <Button size="lg" className="gap-2 bg-teal text-teal-foreground hover:bg-teal/90">
                 <Calendar className="h-4 w-4" />
                 Prenota igiene dentale
               </Button>

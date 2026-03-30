@@ -14,12 +14,12 @@ export function Podologia() {
         {/* Section header */}
         <div className="mb-12 text-center">
           <div className="mb-4 flex items-center justify-center gap-2">
-            <span className="h-1 w-8 rounded-full bg-teal" />
-            <Badge className="gap-1.5 bg-teal/10 text-teal-foreground hover:bg-teal/10">
+            <span className="h-1 w-8 rounded-full bg-lavender" />
+            <Badge className="gap-1.5 bg-lavender/10 text-lavender-foreground hover:bg-lavender/10">
               <Footprints className="h-4 w-4" />
               Podologia
             </Badge>
-            <span className="h-1 w-8 rounded-full bg-teal" />
+            <span className="h-1 w-8 rounded-full bg-lavender" />
           </div>
           <h2 className="text-balance font-serif text-3xl font-bold text-foreground md:text-4xl">
             I nostri trattamenti di podologia
@@ -50,14 +50,14 @@ export function Podologia() {
               </p>
               <ul className="flex flex-col gap-3">
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-lavender" />
                   <div>
                     <p className="text-sm font-semibold text-foreground">Cura delle unghie</p>
                     <p className="text-sm text-muted-foreground">Preventiva o mirata a seconda delle problematiche, prevede interventi di taglio e fresatura eseguiti a scopo preventivo o terapeutico. Trattiamo problematiche specifiche come unghie incarnite (onicocriptosi), unghie ispessite (onicogrifosi) e onicomicosi.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-lavender" />
                   <div>
                     <p className="text-sm font-semibold text-foreground">Trattamento delle cheratosi o rimozione delle callosità</p>
                     <p className="text-sm text-muted-foreground">Prevede la rimozione strumentale di calli, duroni e occhi di pernice (ipercheratosi). Il trattamento professionale permette di eliminare il dolore localizzato e prevenire complicanze che possono compromettere la deambulazione e il comfort quotidiano.</p>
@@ -158,7 +158,7 @@ export function Podologia() {
             {/* Sub-sections */}
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {/* Ricostruzione unghia */}
-              <div className="rounded-2xl border border-teal/20 bg-teal-light p-6">
+              <div className="rounded-2xl border border-lavender/20 bg-lavender-light p-6">
                 <h4 className="mb-3 text-lg font-bold text-foreground">Ricostruzione dell&apos;unghia terapeutica</h4>
                 <p className="text-sm leading-relaxed text-muted-foreground">
                   Questa procedura è volta a ripristinare parzialmente o completamente un&apos;unghia persa a causa di lesioni traumatiche o problemi di salute. Questa tecnica implica l&apos;utilizzo di gel in resina monocomponente fotopolimerizzabile, che si distingue per le sue eccellenti proprietà elastiche e meccaniche.
@@ -166,7 +166,7 @@ export function Podologia() {
               </div>
 
               {/* Tilomi */}
-              <div className="rounded-2xl border border-teal/20 bg-teal-light p-6">
+              <div className="rounded-2xl border border-lavender/20 bg-lavender-light p-6">
                 <h4 className="mb-3 text-lg font-bold text-foreground">Tilomi (calli)</h4>
                 <p className="text-sm leading-relaxed text-muted-foreground">
                   Accumuli di ipercheratosi localizzata causati da eccessiva pressione o attrito. Il trattamento prevede l&apos;ablazione meccanica o manuale della cheratosi in eccesso per un sollievo immediato. La prevenzione si concentra sulle modifiche della biomeccanica del piede, come l&apos;adozione di calzature più adatte o la realizzazione di ortesi in silicone personalizzate.
@@ -174,7 +174,7 @@ export function Podologia() {
               </div>
 
               {/* Onicocriptosi */}
-              <div className="rounded-2xl border border-teal/20 bg-teal-light p-6 md:col-span-2 lg:col-span-1">
+              <div className="rounded-2xl border border-lavender/20 bg-lavender-light p-6 md:col-span-2 lg:col-span-1">
                 <h4 className="mb-3 text-lg font-bold text-foreground">Onicocriptosi (unghia incarnita)</h4>
                 <p className="text-sm leading-relaxed text-muted-foreground">
                   L&apos;onicocriptosi è una condizione patologica in cui una porzione dentellata del bordo laterale dell&apos;unghia penetra nei tessuti molli circostanti, con il rischio di infezione. Coinvolge tipicamente il primo dito del piede ed è più comune tra adolescenti e giovani adulti, con una prevalenza maschile rispetto a quella femminile di 3:1. <span className="text-xs">(Arica, Bostanci, Kocyigit, 2019)</span>
@@ -189,7 +189,7 @@ export function Podologia() {
           {/* CTA */}
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
             <a href="tel:+41912251240">
-              <Button size="lg" className="gap-2 bg-teal text-teal-foreground hover:bg-teal/90">
+              <Button size="lg" className="gap-2 bg-lavender text-lavender-foreground hover:bg-lavender/90">
                 <Phone className="h-4 w-4" />
                 Chiama per un appuntamento
               </Button>
