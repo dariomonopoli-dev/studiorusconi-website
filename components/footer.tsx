@@ -21,16 +21,14 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 lg:px-8">
         <div className="grid gap-8 md:grid-cols-3">
           {/* Brand */}
-          <div className="flex flex-col gap-3">
-            <div className="flex items-center gap-2">
-              <Image
-                src="/images/immagini_nuovo_sito/logo_final.png"
-                alt="Studio Rusconi"
-                width={140}
-                height={56}
-                className="h-9 w-auto"
-              />
-            </div>
+          <div className="flex flex-col items-center text-center gap-3">
+            <Image
+              src="/images/immagini_nuovo_sito/logo_final.png"
+              alt="Studio Rusconi"
+              width={160}
+              height={64}
+              className="h-10 w-auto object-contain"
+            />
             <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
               Igiene dentale e podologia nel cuore di Lugano. Professionalità,
               cura e attenzione per ogni paziente.
