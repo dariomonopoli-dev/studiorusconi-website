@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Phone, Menu, X } from "lucide-react"
+import { Phone, Menu, X, MessageCircle } from "lucide-react"
 import Image from "next/image"
 
 const navLinks = [
@@ -92,6 +92,12 @@ export function Header() {
               <a href="tel:+41912251240">
                 <Phone className="h-4 w-4" />
                 +41 91 225 12 40
+              </a>
+            </Button>
+            <Button variant="outline" className="w-full gap-2" asChild>
+              <a href="https://wa.me/41765591870" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="h-4 w-4" />
+                +41 76 559 18 70
               </a>
             </Button>
           </div>

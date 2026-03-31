@@ -8,6 +8,7 @@ const team = [
     name: "Martina Rusconi",
     role: "Igienista dentale SSS",
     image: "/images/immagini_nuovo_sito/Martina_nuova.jpeg",
+    imagePosition: "center 20%",
     bio: "Sono una professionista d'esperienza capace di coniugare l'aspetto tecnico e scientifico relativo alla medicina dentaria con la dimensione prettamente umana propria alle professioni medicali. Oltre ad avere delle conoscenze solide, delle abilità manuali d'eccellenza, riesco ad instaurare un clima di fiducia con i miei pazienti in modo da rispondere al meglio ai bisogni della persona.",
     experience: "Ho sviluppato un bagaglio di competenze molto variato grazie alle esperienze lavorative d'eccezione nel campo dell'insegnamento, della medicina umana, umanitaria e dentaria.",
     credentials: [
@@ -25,6 +26,7 @@ const team = [
     name: "Paolo Rusconi",
     role: "Podologo dipl. federale",
     image: "/images/immagini_nuovo_sito/Paolo_nuova.jpeg",
+    imagePosition: "center 10%",
     bio: "Sono un professionista meticoloso e preciso nelle cure della persona. Mi applico affinché si trovi la migliore soluzione per alleviare le pene dei miei pazienti. La prevenzione è un pilastro fondamentale per la salute generale soprattutto dei pazienti che soffrono di malattie croniche. Per questa ragione ritengo importante una presa a carico accurata e tempestiva.",
     experience: "",
     credentials: [
@@ -63,7 +65,8 @@ export function Team() {
                   alt={`${member.name}, ${member.role}`}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover object-[center_20%]"
+                  className="object-cover"
+                  style={{ objectPosition: member.imagePosition }}
                   quality={100}
                   unoptimized
                   priority

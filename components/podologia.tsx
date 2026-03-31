@@ -98,7 +98,7 @@ export function Podologia() {
                 alt="Ortonixia - rieducazione ungueale"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
+                className="object-cover object-[center_65%]"
               />
             </div>
           </div>
@@ -111,7 +111,7 @@ export function Podologia() {
                 alt="Ortesi siliconiche su misura"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
+                className="object-cover object-[center_65%]"
               />
             </div>
             <div className="flex flex-col gap-4">
