@@ -9,6 +9,7 @@ import {
   Globe,
   MessageCircle,
   Calendar,
+  Instagram,
 } from "lucide-react"
 
 export function Contact() {
@@ -65,12 +66,21 @@ export function Contact() {
                 </p>
               </div>
             </a>
-            <a href="mailto:info@studiorusconi.ch" className="flex items-start gap-4 transition-colors hover:text-foreground">
+            <a href="mailto:info.studiorusconi@gmail.com" className="flex items-start gap-4 transition-colors hover:text-foreground">
               <Mail className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
               <div>
                 <p className="text-sm font-semibold text-foreground">Email</p>
                 <p className="text-sm text-muted-foreground">
-                  info@studiorusconi.ch
+                  info.studiorusconi@gmail.com
+                </p>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/centro_igea_lugano" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 transition-colors hover:text-foreground">
+              <Instagram className="mt-0.5 h-5 w-5 shrink-0 text-[#E4405F]" />
+              <div>
+                <p className="text-sm font-semibold text-foreground">Instagram</p>
+                <p className="text-sm text-muted-foreground">
+                  @centro_igea_lugano
                 </p>
               </div>
             </a>

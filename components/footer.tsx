@@ -1,10 +1,12 @@
 import { Separator } from "@/components/ui/separator"
+import { Instagram } from "lucide-react"
 import Image from "next/image"
 
 const quickLinks = [
   { label: "Home", href: "#" },
   { label: "Igiene dentale", href: "#igiene-dentale" },
   { label: "Podologia", href: "#podologia" },
+  { label: "Tariffe", href: "/biglietto-da-visita.pdf", external: true },
   { label: "Team", href: "#team" },
   { label: "Contatti", href: "#contatti" },
 ]
@@ -33,6 +35,15 @@ export function Footer() {
               Igiene dentale e podologia nel cuore di Lugano. Professionalità,
               cura e attenzione per ogni paziente.
             </p>
+            <a
+              href="https://www.instagram.com/centro_igea_lugano"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              <Instagram className="h-5 w-5" />
+              @centro_igea_lugano
+            </a>
           </div>
 
           {/* Quick links */}
@@ -45,6 +56,7 @@ export function Footer() {
                 <a
                   key={link.label}
                   href={link.href}
+                  {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   {link.label}

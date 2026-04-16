@@ -65,7 +65,7 @@ const jsonLd = {
   description: 'Studio specialistico in igiene dentale e podologia nel cuore di Lugano.',
   url: 'https://www.studiorusconi.ch',
   telephone: '+41912251240',
-  email: 'info@studiorusconi.ch',
+  email: 'info.studiorusconi@gmail.com',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Via Nassa 54',

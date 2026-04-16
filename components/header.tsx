@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Home", href: "#" },
   { label: "Igiene dentale", href: "#igiene-dentale" },
   { label: "Podologia", href: "#podologia" },
+  { label: "Tariffe", href: "/biglietto-da-visita.pdf", external: true },
   { label: "Team", href: "#team" },
   { label: "Contatti", href: "#contatti" },
 ]
@@ -37,6 +38,7 @@ export function Header() {
             <a
               key={link.label}
               href={link.href}
+              {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               {link.label}
@@ -75,6 +77,7 @@ export function Header() {
               <a
                 key={link.label}
                 href={link.href}
+                {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
                 onClick={() => setMobileOpen(false)}
               >

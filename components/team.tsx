@@ -19,7 +19,7 @@ const team = [
       "2000-2010 – Igienista dentale presso Dottor Virgillito, Ginevra",
       "2010-2021 – Igienista dentale presso i Dottori Moor, Lugano",
     ],
-    languages: ["Italiano", "Tedesco", "Inglese"],
+    languages: ["Italiano", "Francese"],
     accent: "teal" as const,
   },
   {
@@ -34,7 +34,7 @@ const team = [
       "2010-2020 – Podologo indipendente",
       "2014-2021 – Docente di podologia presso il CPS Lugano",
     ],
-    languages: ["Italiano", "Francese", "Inglese"],
+    languages: ["Italiano", "Francese", "Tedesco", "Inglese"],
     accent: "lavender" as const,
   },
 ]
