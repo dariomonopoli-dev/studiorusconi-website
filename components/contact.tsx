@@ -103,7 +103,7 @@ export function Contact() {
                   Metodi di pagamento
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  Contanti, Carta di credito / debito, TWINT, Fattura
+                  Contanti, Carta di credito / debito, TWINT
                 </p>
               </div>
             </div>
