@@ -3,12 +3,12 @@ import { Instagram } from "lucide-react"
 import Image from "next/image"
 
 const quickLinks = [
-  { label: "Home", href: "#" },
-  { label: "Igiene dentale", href: "#igiene-dentale" },
-  { label: "Podologia", href: "#podologia" },
-  { label: "Tariffe", href: "/biglietto-da-visita.pdf", external: true },
-  { label: "Team", href: "#team" },
-  { label: "Contatti", href: "#contatti" },
+  { label: "Home", href: "/" },
+  { label: "Igiene dentale", href: "/igiene-dentale" },
+  { label: "Podologia", href: "/podologia" },
+  { label: "Tariffe", href: "/tariffe" },
+  { label: "Team", href: "/#team" },
+  { label: "Contatti", href: "/#contatti" },
 ]
 
 const legalLinks = [

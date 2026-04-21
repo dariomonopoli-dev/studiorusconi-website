@@ -66,12 +66,12 @@ export function Contact() {
                 </p>
               </div>
             </a>
-            <a href="mailto:info.studiorusconi@gmail.com" className="flex items-start gap-4 transition-colors hover:text-foreground">
+            <a href="mailto:info@studiorusconi.ch" className="flex items-start gap-4 transition-colors hover:text-foreground">
               <Mail className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
               <div>
                 <p className="text-sm font-semibold text-foreground">Email</p>
                 <p className="text-sm text-muted-foreground">
-                  info.studiorusconi@gmail.com
+                  info@studiorusconi.ch
                 </p>
               </div>
             </a>

@@ -33,7 +33,7 @@ export function DisciplineSelector() {
         <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
           {/* Igiene dentale panel */}
           <a
-            href="#igiene-dentale"
+            href="/igiene-dentale"
             className="group relative flex flex-col gap-4 overflow-hidden rounded-2xl border border-border bg-teal-light transition-shadow hover:shadow-lg sm:gap-5"
           >
             <div className="relative aspect-[16/9] w-full overflow-hidden">
@@ -75,7 +75,7 @@ export function DisciplineSelector() {
 
           {/* Podologia panel */}
           <a
-            href="#podologia"
+            href="/podologia"
             className="group relative flex flex-col gap-4 overflow-hidden rounded-2xl border border-border bg-lavender-light transition-shadow hover:shadow-lg sm:gap-5"
           >
             <div className="relative aspect-[16/9] w-full overflow-hidden">
@@ -89,7 +89,7 @@ export function DisciplineSelector() {
             </div>
             <div className="flex flex-col gap-4 p-5 sm:p-6 md:p-8">
               <div className="flex items-center gap-3">
-                <span className="text-2xl">🦶</span>
+                <span className="text-2xl">🦶🏻</span>
                 <h3 className="font-serif text-xl font-bold text-foreground sm:text-2xl">
                   Podologia
                 </h3>
@@ -97,6 +97,9 @@ export function DisciplineSelector() {
               <p className="text-sm leading-relaxed text-muted-foreground">
                 Cura e benessere dei piedi con tecniche moderne. Dalla prevenzione
                 alla risoluzione di patologie specifiche.
+              </p>
+              <p className="text-sm font-medium leading-relaxed text-lavender-foreground">
+                Specializzato in piede diabetico e riconosciuto dalla LAML
               </p>
               <div className="flex flex-wrap gap-1.5 sm:gap-2">
                 {podologiaChips.map((chip) => (

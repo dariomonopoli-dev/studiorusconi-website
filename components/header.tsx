@@ -6,12 +6,12 @@ import { Phone, Menu, X, MessageCircle } from "lucide-react"
 import Image from "next/image"
 
 const navLinks = [
-  { label: "Home", href: "#" },
-  { label: "Igiene dentale", href: "#igiene-dentale" },
-  { label: "Podologia", href: "#podologia" },
-  { label: "Tariffe", href: "/biglietto-da-visita.pdf", external: true },
-  { label: "Team", href: "#team" },
-  { label: "Contatti", href: "#contatti" },
+  { label: "Home", href: "/" },
+  { label: "Igiene dentale", href: "/igiene-dentale" },
+  { label: "Podologia", href: "/podologia" },
+  { label: "Tariffe", href: "/tariffe" },
+  { label: "Team", href: "/#team" },
+  { label: "Contatti", href: "/#contatti" },
 ]
 
 export function Header() {
@@ -21,7 +21,7 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-border bg-card/95 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2">
           <Image
             src="/images/immagini_nuovo_sito/logo_final.png"
             alt="Studio Rusconi"

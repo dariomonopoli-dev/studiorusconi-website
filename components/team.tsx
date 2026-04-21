@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
-import { ExternalLink, Download } from "lucide-react"
+import { ExternalLink } from "lucide-react"
 
 const team = [
   {
@@ -144,16 +144,6 @@ export function Team() {
                         {"Prenota con " + member.name.split(" ")[0]}
                       </a>
                     )}
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="w-full gap-2 sm:w-fit"
-                    asChild
-                  >
-                    <a href="/biglietto-da-visita.pdf" download>
-                      <Download className="h-4 w-4" />
-                      Biglietto da visita e tariffe
-                    </a>
                   </Button>
                 </div>
               </div>
