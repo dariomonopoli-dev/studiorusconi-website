@@ -32,7 +32,8 @@
       "Bash(curl -s -o /dev/null -w \"vcf: %{http_code} %{size_download}B %{content_type}\\\\n\" http://localhost:3000/studio-rusconi.vcf)",
       "Bash(curl -s -o /dev/null -w \"qr:  %{http_code} %{size_download}B %{content_type}\\\\n\" http://localhost:3000/qr-studio-rusconi.svg)",
       "Bash(curl -s http://localhost:3000/ -o /tmp/home.html -w \"home: %{http_code} %{size_download}B\\\\n\")",
-      "Bash(pkill -f \"next dev\")"
+      "Bash(pkill -f \"next dev\")",
+      "Bash(npm install *)"
     ]
   }
 }
