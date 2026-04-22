@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
+import { SaveContactButton } from "@/components/save-contact-button"
 import {
   MapPin,
   Phone,
@@ -131,6 +132,26 @@ export function Contact() {
                 title="Studio Rusconi - Via Nassa 54, Lugano"
               />
             </div>
+          </div>
+        </div>
+
+        {/* Save contact (vCard + QR) */}
+        <div className="mt-8 flex flex-col items-center gap-6 rounded-2xl border border-border bg-card p-6 sm:p-8 md:flex-row md:justify-center md:gap-10">
+          <div className="flex h-36 w-36 shrink-0 items-center justify-center rounded-xl bg-white p-3 md:h-44 md:w-44">
+            <img
+              src="/qr-studio-rusconi.svg"
+              alt="QR code per salvare il contatto dello Studio Rusconi"
+              className="h-full w-full"
+            />
+          </div>
+          <div className="flex max-w-md flex-col items-center gap-3 text-center md:items-start md:text-left">
+            <h3 className="font-serif text-xl font-semibold text-foreground md:text-2xl">
+              Salva il nostro contatto
+            </h3>
+            <p className="text-sm text-muted-foreground">
+              Scansionate il QR code con la fotocamera del telefono, oppure toccate il bottone: aggiungeremo tutti i nostri recapiti direttamente nella vostra rubrica.
+            </p>
+            <SaveContactButton />
           </div>
         </div>
 

@@ -99,7 +99,7 @@ export function DisciplineSelector() {
                 alla risoluzione di patologie specifiche.
               </p>
               <p className="text-sm font-medium leading-relaxed text-lavender-foreground">
-                Specializzato in piede diabetico e riconosciuto dalla LAML
+                Specializzato in piede diabetico e riconosciuto dalla LAMAL
               </p>
               <div className="flex flex-wrap gap-1.5 sm:gap-2">
                 {podologiaChips.map((chip) => (

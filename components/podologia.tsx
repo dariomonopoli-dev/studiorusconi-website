@@ -25,7 +25,7 @@ export function Podologia() {
             I nostri trattamenti di podologia
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-sm text-muted-foreground md:text-base">
-            Potete fare affidamento sulle nostre eccellenti doti tecniche, sull&apos;innovazione continua e sulla ricerca di soluzioni non standardizzate per rispondere ai bisogni unici di ciascuno.
+            Potete fare affidamento sulle nostre eccellenti doti tecniche, sull&apos;innovazione continua e sulla ricerca di soluzioni personalizzate per rispondere ai bisogni unici di ciascuno.
           </p>
         </div>
 

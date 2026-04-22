@@ -14,7 +14,7 @@ const faqs = [
   {
     question: "Qual è la politica di cancellazione?",
     answer:
-      "Vi chiediamo di avvisarci almeno 24 ore prima dell'appuntamento in caso di disdetta. Questo ci permette di offrire lo slot ad altri pazienti in attesa.",
+      "Vi chiediamo di avvisarci almeno 24 ore prima dell'appuntamento in caso di disdetta. Questo ci permette di offrire lo slot ad altri pazienti in attesa. Ci riserviamo la possibilità di fatturare 50.- per la copertura dei costi.",
   },
   {
     question:
