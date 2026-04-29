@@ -76,12 +76,14 @@ export function Contact() {
                 </p>
               </div>
             </a>
-            <a href="https://www.instagram.com/centro_igea_lugano" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 transition-colors hover:text-foreground">
-              <Instagram className="mt-0.5 h-5 w-5 shrink-0 text-[#E4405F]" />
+            <a href="https://www.instagram.com/centro_igea_lugano" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 transition-opacity hover:opacity-80">
+              <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
+                <Instagram className="h-3.5 w-3.5 text-white" />
+              </span>
               <div>
                 <p className="text-sm font-semibold text-foreground">Instagram</p>
                 <p className="text-sm text-muted-foreground">
-                  @centro_igea_lugano
+                  Seguici
                 </p>
               </div>
             </a>

@@ -9,6 +9,7 @@ import {
   Calendar,
   CheckCircle2,
   AlertTriangle,
+  Instagram,
 } from "lucide-react"
 
 export function IgieneDentale() {
@@ -263,7 +264,7 @@ export function IgieneDentale() {
                     className="object-cover"
                   />
                 </div>
-                <ul className="flex flex-col gap-2">
+                <ul className="mb-6 flex flex-col gap-2">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-teal" />
                     <p className="text-sm text-muted-foreground"><strong className="text-foreground">Come funziona:</strong> Utilizziamo gel ad alta concentrazione per un tempo ridotto sotto costante supervisione professionale.</p>
@@ -273,24 +274,60 @@ export function IgieneDentale() {
                     <p className="text-sm text-muted-foreground"><strong className="text-foreground">Vantaggi:</strong> Risultato istantaneo, ideale in vista di eventi importanti o per chi preferisce non dover gestire il trattamento domiciliare.</p>
                   </li>
                 </ul>
+
+                {/* Protocolli combinabili */}
+                <div className="border-t border-teal/20 pt-6">
+                  <p className="mb-3 text-sm font-semibold text-foreground">I nostri protocolli esclusivi</p>
+                  <p className="mb-4 text-sm text-muted-foreground">
+                    I trattamenti possono essere combinati per massimizzare l&apos;efficacia:
+                  </p>
+                  <div className="flex flex-col gap-3">
+                    <div className="rounded-xl border border-teal/20 bg-background/60 p-4">
+                      <p className="text-sm font-semibold text-foreground">Trattamento Intensivo</p>
+                      <p className="mt-1 text-sm text-muted-foreground">Il protocollo d&apos;urto: prevede una sessione di circa 90 minuti per ottenere il massimo grado di schiaritura possibile in una sola seduta.</p>
+                    </div>
+                    <div className="rounded-xl border border-teal/20 bg-background/60 p-4">
+                      <p className="text-sm font-semibold text-foreground">Trattamento Click</p>
+                      <p className="mt-1 text-sm text-muted-foreground">La soluzione &quot;smart&quot;: si effettua subito dopo la seduta di igiene dentale (detartrasi) per un tocco di luce immediato.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Protocolli Esclusivi */}
-            <div className="rounded-2xl border border-border bg-card p-6 md:p-8">
-              <h4 className="mb-4 text-lg font-bold text-foreground">I Nostri Protocolli Esclusivi</h4>
-              <p className="mb-4 text-sm text-muted-foreground">
-                I trattamenti possono essere combinati per massimizzare l&apos;efficacia. Ecco le nostre opzioni rapide ed intensive:
-              </p>
-              <div className="grid gap-4 md:grid-cols-2">
-                <div className="rounded-xl border border-teal/20 bg-teal-light/50 p-4">
-                  <p className="text-sm font-semibold text-foreground">Trattamento Click</p>
-                  <p className="mt-1 text-sm text-muted-foreground">La soluzione &quot;smart&quot;: si effettua subito dopo la seduta di igiene dentale (detartrasi) per un tocco di luce immediato.</p>
-                </div>
-                <div className="rounded-xl border border-teal/20 bg-teal-light/50 p-4">
-                  <p className="text-sm font-semibold text-foreground">Trattamento Intensivo</p>
-                  <p className="mt-1 text-sm text-muted-foreground">Il protocollo d&apos;urto: prevede una sessione di circa 90 minuti per ottenere il massimo grado di schiaritura possibile in una sola seduta.</p>
-                </div>
+            {/* Galleria prima e dopo */}
+            <div className="rounded-2xl border border-teal/20 bg-teal-light p-6 md:p-8">
+              <div className="mb-4 flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+                <p className="text-sm font-semibold text-foreground">Galleria prima e dopo</p>
+                <a
+                  href="https://www.instagram.com/centro_igea_lugano"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-foreground transition-opacity hover:opacity-80"
+                >
+                  <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
+                    <Instagram className="h-4 w-4 text-white" />
+                  </span>
+                  Seguici
+                </a>
+              </div>
+              <div className="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4">
+                {[
+                  { src: "/images/foto Dario/prima e dopo 1.JPG", alt: "Prima e dopo sbiancamento dentale - caso 1" },
+                  { src: "/images/foto Dario/prima e dopo2.JPG", alt: "Prima e dopo sbiancamento dentale - caso 2" },
+                  { src: "/images/foto Dario/prima e dopo 3.JPG", alt: "Prima e dopo sbiancamento dentale - caso 3" },
+                  { src: "/images/foto Dario/igiene dentale-sbiancamento 2.JPG", alt: "Risultato sbiancamento dentale" },
+                ].map((photo) => (
+                  <div key={photo.src} className="relative aspect-square overflow-hidden rounded-lg">
+                    <Image
+                      src={photo.src}
+                      alt={photo.alt}
+                      fill
+                      sizes="(max-width: 768px) 50vw, 25vw"
+                      className="object-cover"
+                    />
+                  </div>
+                ))}
               </div>
             </div>
 
