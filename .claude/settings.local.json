@@ -34,7 +34,8 @@
       "Bash(curl -s http://localhost:3000/ -o /tmp/home.html -w \"home: %{http_code} %{size_download}B\\\\n\")",
       "Bash(pkill -f \"next dev\")",
       "Bash(npm install *)",
-      "Bash(npx tsc *)"
+      "Bash(npx tsc *)",
+      "Bash(git stash *)"
     ]
   }
 }

@@ -6,6 +6,7 @@ const quickLinks = [
   { label: "Home", href: "/" },
   { label: "Igiene dentale", href: "/igiene-dentale" },
   { label: "Podologia", href: "/podologia" },
+  { label: "Galleria", href: "/galleria" },
   { label: "Tariffe", href: "/tariffe" },
   { label: "Team", href: "/#team" },
   { label: "Contatti", href: "/#contatti" },

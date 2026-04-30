@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { LightboxGallery } from "@/components/lightbox-gallery"
 import {
   ShieldCheck,
   Sparkles,
@@ -311,24 +312,14 @@ export function IgieneDentale() {
                   Seguici
                 </a>
               </div>
-              <div className="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4">
-                {[
+              <LightboxGallery
+                photos={[
                   { src: "/images/foto Dario/prima e dopo 1.JPG", alt: "Prima e dopo sbiancamento dentale - caso 1" },
                   { src: "/images/foto Dario/prima e dopo2.JPG", alt: "Prima e dopo sbiancamento dentale - caso 2" },
                   { src: "/images/foto Dario/prima e dopo 3.JPG", alt: "Prima e dopo sbiancamento dentale - caso 3" },
                   { src: "/images/foto Dario/igiene dentale-sbiancamento 2.JPG", alt: "Risultato sbiancamento dentale" },
-                ].map((photo) => (
-                  <div key={photo.src} className="relative aspect-square overflow-hidden rounded-lg">
-                    <Image
-                      src={photo.src}
-                      alt={photo.alt}
-                      fill
-                      sizes="(max-width: 768px) 50vw, 25vw"
-                      className="object-cover"
-                    />
-                  </div>
-                ))}
-              </div>
+                ]}
+              />
             </div>
 
             {/* Requisiti */}
