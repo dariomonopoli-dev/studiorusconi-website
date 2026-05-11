@@ -102,3 +102,31 @@
     @apply bg-background text-foreground;
   }
 }
+
+.legal-prose {
+  @apply text-sm md:text-base text-muted-foreground leading-relaxed;
+}
+.legal-prose h2 {
+  @apply font-serif text-xl md:text-2xl font-bold text-foreground mt-10 mb-3;
+}
+.legal-prose h3 {
+  @apply font-serif text-lg font-semibold text-foreground mt-6 mb-2;
+}
+.legal-prose p {
+  @apply mb-4;
+}
+.legal-prose ul {
+  @apply list-disc pl-6 mb-4 space-y-1.5;
+}
+.legal-prose li {
+  @apply leading-relaxed;
+}
+.legal-prose strong {
+  @apply text-foreground font-semibold;
+}
+.legal-prose a {
+  @apply text-primary underline-offset-4 hover:underline;
+}
+.legal-prose code {
+  @apply rounded bg-muted px-1 py-0.5 text-xs font-mono text-foreground;
+}

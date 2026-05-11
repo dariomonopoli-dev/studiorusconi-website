@@ -5,7 +5,9 @@ import { Button } from "@/components/ui/button"
 import { Phone, Menu, X, MessageCircle } from "lucide-react"
 import Image from "next/image"
 
-const navLinks = [
+type NavLink = { label: string; href: string; external?: boolean }
+
+const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "Igiene dentale", href: "/igiene-dentale" },
   { label: "Podologia", href: "/podologia" },

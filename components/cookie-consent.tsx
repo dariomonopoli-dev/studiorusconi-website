@@ -17,11 +17,13 @@ export function CookieConsent() {
 
   function accept() {
     localStorage.setItem("cookie-consent", "accepted")
+    window.dispatchEvent(new Event("cookie-consent-change"))
     setVisible(false)
   }
 
   function decline() {
     localStorage.setItem("cookie-consent", "declined")
+    window.dispatchEvent(new Event("cookie-consent-change"))
     setVisible(false)
   }
 
@@ -75,9 +77,9 @@ export function CookieConsent() {
           {/* Policy link */}
           <p className="mt-4 text-center text-xs text-muted-foreground">
             Maggiori informazioni nella nostra{" "}
-            <a href="#" className="underline hover:text-foreground">Cookie Policy</a>
+            <a href="/cookie-policy" className="underline hover:text-foreground">Cookie Policy</a>
             {" "}e{" "}
-            <a href="#" className="underline hover:text-foreground">Privacy Policy</a>
+            <a href="/privacy-policy" className="underline hover:text-foreground">Privacy Policy</a>
           </p>
         </div>
       </div>

@@ -2,7 +2,9 @@ import { Separator } from "@/components/ui/separator"
 import { Instagram } from "lucide-react"
 import Image from "next/image"
 
-const quickLinks = [
+type FooterLink = { label: string; href: string; external?: boolean }
+
+const quickLinks: FooterLink[] = [
   { label: "Home", href: "/" },
   { label: "Igiene dentale", href: "/igiene-dentale" },
   { label: "Podologia", href: "/podologia" },
@@ -12,10 +14,9 @@ const quickLinks = [
   { label: "Contatti", href: "/#contatti" },
 ]
 
-const legalLinks = [
-  { label: "Privacy Policy", href: "#" },
-  { label: "Cookie Policy", href: "#" },
-  { label: "Impressum", href: "#" },
+const legalLinks: FooterLink[] = [
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Cookie Policy", href: "/cookie-policy" },
 ]
 
 export function Footer() {
