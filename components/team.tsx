@@ -157,7 +157,7 @@ export function Team() {
             Verificate i diplomi dei vostri operatori nel registro nazionale delle professioni della salute: saprete esattamente che titolo di studio hanno conseguito e la validità sul territorio svizzero.
           </p>
           <a
-            href="http://www.nareg.ch/"
+            href="https://www.nareg.ch/"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-lavender transition-colors hover:text-lavender-foreground"
