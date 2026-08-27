@@ -5,7 +5,6 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: '/api/',
     },
     sitemap: 'https://www.studiorusconi.ch/sitemap.xml',
     host: 'https://www.studiorusconi.ch',

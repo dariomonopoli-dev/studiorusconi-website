@@ -8,6 +8,9 @@ export const BOOKING_URL = 'https://book.agenda.ch/services?companyId=17111'
 export const INSTAGRAM_URL = 'https://www.instagram.com/studio_rusconi'
 export const GOOGLE_MAPS_URL = 'https://www.google.com/maps/search/?api=1&query=Via+Nassa+54,+6900+Lugano'
 export const OG_IMAGE = '/images/og-studio-rusconi.jpg'
+export const GOOGLE_PLACE_ID = 'ChIJv-PApH4thEcROKOdHpeg3pA'
+export const GOOGLE_PROFILE_URL = `https://www.google.com/maps/place/?q=place_id:${GOOGLE_PLACE_ID}`
+export const GOOGLE_REVIEW_URL = `https://search.google.com/local/writereview?placeid=${GOOGLE_PLACE_ID}`
 
 export const address = {
   '@type': 'PostalAddress',
@@ -71,6 +74,7 @@ export const business = {
   founder: [martina, paolo],
   sameAs: [
     INSTAGRAM_URL,
+    GOOGLE_PROFILE_URL,
     'https://www.local.ch/it/d/lugano/6900/igiene-dentale/centro-igea-sagl-t7YTIXgfdJCDgTrksAMGBQ',
     'https://search.ch/tel/lugano/via-nassa-54/centro-igea-sagl-2',
   ],

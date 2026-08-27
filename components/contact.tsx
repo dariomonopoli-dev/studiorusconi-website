@@ -11,7 +11,9 @@ import {
   MessageCircle,
   Calendar,
   Instagram,
+  Star,
 } from "lucide-react"
+import { GOOGLE_PROFILE_URL, GOOGLE_REVIEW_URL } from "@/lib/seo"
 
 export function Contact() {
   return (
@@ -87,6 +89,21 @@ export function Contact() {
                 </p>
               </div>
             </a>
+            <div className="flex items-start gap-4">
+              <Star className="mt-0.5 h-5 w-5 shrink-0 fill-amber-400 text-amber-400" />
+              <div>
+                <p className="text-sm font-semibold text-foreground">Google</p>
+                <p className="text-sm text-muted-foreground">
+                  <a href={GOOGLE_PROFILE_URL} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-foreground">
+                    Profilo e recensioni su Google Maps
+                  </a>
+                  {" · "}
+                  <a href={GOOGLE_REVIEW_URL} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-foreground">
+                    lascia una recensione
+                  </a>
+                </p>
+              </div>
+            </div>
             <div className="flex items-start gap-4">
               <Clock className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
               <div>
