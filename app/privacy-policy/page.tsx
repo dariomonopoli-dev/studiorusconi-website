@@ -3,10 +3,11 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Studio Rusconi",
+  title: "Privacy Policy",
   description:
     "Informativa sul trattamento dei dati personali di Studio Rusconi a Lugano.",
   robots: { index: true, follow: false },
+  alternates: { canonical: "/privacy-policy" },
 }
 
 export default function PrivacyPolicyPage() {

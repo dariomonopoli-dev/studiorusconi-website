@@ -1,11 +1,41 @@
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { ServiceFaq } from "@/components/service-faq"
 import {
   Footprints,
   Phone,
   CheckCircle2,
 } from "lucide-react"
+
+export const podologiaFaqs = [
+  {
+    question: "Qual è la differenza tra podologo e pedicure?",
+    answer:
+      "Il podologo dipl. federale è un professionista sanitario formato per trattare le patologie del piede (unghie incarnite, micosi, ipercheratosi, piede diabetico), mentre la pedicure estetica si limita alla cura cosmetica. Paolo Rusconi lavora con strumenti sterilizzati in autoclave e protocolli medicali.",
+  },
+  {
+    question: "Come si cura un'unghia incarnita senza operare?",
+    answer:
+      "Nella maggior parte dei casi l'onicocriptosi si tratta con la cura podologica strumentale e, per correggere la curvatura dell'unghia, con l'ortonixia: una piccola molla in titanio o una spanga BS applicata sull'unghia che ne rieduca la crescita in modo indolore.",
+  },
+  {
+    question: "La podologia è coperta dalla cassa malati?",
+    answer:
+      "Per i pazienti diabetici, con prescrizione medica, le cure podologiche sono coperte dall'assicurazione di base LAMal. Per gli altri pazienti molte assicurazioni complementari rimborsano parte dei trattamenti.",
+  },
+  {
+    question: "Ogni quanto è consigliata una cura podologica?",
+    answer:
+      "In genere ogni 6-8 settimane, che corrisponde al tempo di ricrescita di unghie e callosità. Per pazienti diabetici o con problemi circolatori stabiliamo un piano di controllo più frequente.",
+  },
+  {
+    question: "Cosa sono le ortesi siliconiche?",
+    answer:
+      "Sono piccoli dispositivi in silicone modellati su misura sulle dita del piede per proteggere le zone di attrito, correggere la posizione delle dita e prevenire calli e occhi di pernice.",
+  },
+]
+
 
 export function Podologia() {
   return (
@@ -21,11 +51,11 @@ export function Podologia() {
             </Badge>
             <span className="h-1 w-8 rounded-full bg-lavender" />
           </div>
-          <h2 className="text-balance font-serif text-3xl font-bold text-foreground md:text-4xl">
-            I nostri trattamenti di podologia
-          </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-sm text-muted-foreground md:text-base">
-            Potete fare affidamento sulle nostre eccellenti doti tecniche, sull&apos;innovazione continua e sulla ricerca di soluzioni personalizzate per rispondere ai bisogni unici di ciascuno.
+          <h1 className="text-balance font-serif text-3xl font-bold text-foreground md:text-4xl">
+            Podologo a Lugano: i nostri trattamenti
+          </h1>
+          <p className="mx-auto mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
+            Paolo Rusconi, podologo con diploma federale e già docente di podologia al CPS di Lugano, vi riceve in Via Nassa 54 per la cura podologica strumentale, il trattamento di unghie incarnite, calli e duroni, l&apos;ortonixia, le ortesi siliconiche su misura e la cura del piede diabetico. Potete fare affidamento su doti tecniche eccellenti, innovazione continua e soluzioni personalizzate per i bisogni unici di ciascuno.
           </p>
         </div>
 
@@ -185,6 +215,8 @@ export function Podologia() {
               </div>
             </div>
           </div>
+
+          <ServiceFaq faqs={podologiaFaqs} accent="hover:text-lavender" />
 
           {/* CTA */}
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">

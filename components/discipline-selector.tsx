@@ -38,7 +38,7 @@ export function DisciplineSelector() {
           >
             <div className="relative aspect-[16/9] w-full overflow-hidden">
               <Image
-                src="/images/immagini_nuovo_sito/Home-igiene dentale scopri di più.JPG"
+                src="/images/immagini_nuovo_sito/home-igiene-dentale.JPG"
                 alt="Igiene dentale - scopri di più"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"

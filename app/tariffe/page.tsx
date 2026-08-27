@@ -3,11 +3,15 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Phone, Calendar } from "lucide-react"
+import { JsonLd } from "@/components/json-ld"
+import { BUSINESS_ID, OG_IMAGE, SITE_URL, breadcrumbs, graph } from "@/lib/seo"
 
 export const metadata: Metadata = {
-  title: "Tariffe | Studio Rusconi",
+  title: "Tariffe igiene dentale e podologia a Lugano",
   description:
-    "Tariffe dei servizi di igiene dentale e podologia dello Studio Rusconi a Lugano.",
+    "Prezzi trasparenti in CHF: igiene dentale da 150.-, sbiancamento da 90.-, cura podologica da 65.-. Tariffario dello Studio Rusconi, Via Nassa 54 Lugano.",
+  alternates: { canonical: "/tariffe" },
+  openGraph: { title: "Tariffe | Studio Rusconi Lugano", url: "/tariffe", images: [OG_IMAGE] },
 }
 
 const igieneDentale = [
@@ -52,6 +56,34 @@ const podologia = [
   { prestazione: "Consulenza con ausilio di materiali", prezzo: "40" },
 ]
 
+function offerCatalog(name: string, rows: { prestazione: string; prezzo: string }[]) {
+  return {
+    "@type": "OfferCatalog",
+    name,
+    itemListElement: rows
+      .filter((row) => /^\d+$/.test(row.prezzo))
+      .map((row) => ({
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: row.prestazione },
+        price: row.prezzo,
+        priceCurrency: "CHF",
+        offeredBy: { "@id": BUSINESS_ID },
+      })),
+  }
+}
+
+const jsonLd = graph(breadcrumbs([{ name: "Tariffe", path: "/tariffe" }]), {
+  "@type": "WebPage",
+  "@id": `${SITE_URL}/tariffe`,
+  name: "Tariffe Studio Rusconi",
+  about: { "@id": BUSINESS_ID },
+  mainEntity: [
+    offerCatalog("Igienista dentale", igieneDentale),
+    offerCatalog("Sbiancamento dei denti", sbiancamento),
+    offerCatalog("Podologo", podologia),
+  ],
+})
+
 function TariffeTable({
   data,
 }: {
@@ -93,6 +125,7 @@ function TariffeTable({
 export default function TariffePage() {
   return (
     <div className="flex min-h-screen flex-col">
+      <JsonLd data={jsonLd} />
       <Header />
       <main className="flex-1 bg-background py-12 md:py-16 lg:py-24">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">

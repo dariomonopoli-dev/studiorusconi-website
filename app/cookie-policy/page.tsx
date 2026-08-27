@@ -4,10 +4,11 @@ import { Footer } from "@/components/footer"
 import { CookieConsentReset } from "@/components/cookie-consent-reset"
 
 export const metadata: Metadata = {
-  title: "Cookie Policy | Studio Rusconi",
+  title: "Cookie Policy",
   description:
     "Informativa sull'uso dei cookie del sito Studio Rusconi: tipologie, finalità e come gestire le preferenze.",
   robots: { index: true, follow: false },
+  alternates: { canonical: "/cookie-policy" },
 }
 
 export default function CookiePolicyPage() {

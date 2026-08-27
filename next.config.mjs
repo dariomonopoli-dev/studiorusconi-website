@@ -40,7 +40,16 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    formats: ['image/avif', 'image/webp'],
+    minimumCacheTTL: 2678400,
+  },
+  async redirects() {
+    return ['centroigea.ch', 'www.centroigea.ch', 'studiorusconi.ch'].map((host) => ({
+      source: '/:path*',
+      has: [{ type: 'host', value: host }],
+      destination: 'https://www.studiorusconi.ch/:path*',
+      permanent: true,
+    }))
   },
   async headers() {
     return [

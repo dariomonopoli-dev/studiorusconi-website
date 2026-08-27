@@ -5,7 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
-const faqs = [
+export const faqs = [
   {
     question: "Come posso prenotare un appuntamento?",
     answer:
@@ -31,6 +31,26 @@ const faqs = [
     question: "Ogni quanto è consigliata una seduta di igiene dentale?",
     answer:
       "In genere consigliamo una seduta di igiene professionale ogni 6 mesi, ma la frequenza può variare in base alle condizioni individuali della bocca. Martina valuterà con voi il piano di mantenimento più adatto.",
+  },
+  {
+    question: "Dove si trova lo Studio Rusconi a Lugano?",
+    answer:
+      "Lo studio è in Via Nassa 54, 6900 Lugano, nel centro pedonale a pochi passi dal lungolago e dalla Piazza della Riforma.",
+  },
+  {
+    question: "Quanto costa una seduta di igiene dentale a Lugano?",
+    answer:
+      "Presso lo Studio Rusconi il trattamento dell'igienista dentale costa da 150.- CHF (cura semplice, 45 min) a 180.- CHF (cura intensiva, 60 min); per i bambini fino ai 10 anni 90.- CHF. Il tariffario completo, allineato alle raccomandazioni dell'associazione professionale, è pubblicato nella pagina Tariffe.",
+  },
+  {
+    question: "Serve una prescrizione del dentista per l'igiene dentale?",
+    answer:
+      "No. L'igienista dentale SSS è una professione sanitaria riconosciuta in Svizzera e potete prenotare la seduta direttamente, anche senza essere pazienti di uno studio dentistico. In caso di problemi che richiedono un dentista, vi indirizziamo a un collega di fiducia.",
+  },
+  {
+    question: "In quali lingue vengono seguiti i pazienti?",
+    answer:
+      "Parliamo italiano, francese, tedesco e inglese.",
   },
 ]
 

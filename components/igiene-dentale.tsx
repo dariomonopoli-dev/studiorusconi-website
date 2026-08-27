@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { LightboxGallery } from "@/components/lightbox-gallery"
+import { ServiceFaq } from "@/components/service-faq"
 import {
   ShieldCheck,
   Sparkles,
@@ -12,6 +13,35 @@ import {
   AlertTriangle,
   Instagram,
 } from "lucide-react"
+
+export const igieneFaqs = [
+  {
+    question: "Quanto dura una seduta di igiene dentale?",
+    answer:
+      "Da 45 a 60 minuti a seconda della quantità di tartaro e delle condizioni delle gengive. La prima seduta comprende anche l'anamnesi e il controllo dello stato di salute della bocca.",
+  },
+  {
+    question: "La detartrasi fa male?",
+    answer:
+      "Di norma no. Gli strumenti a ultrasuoni e manuali che utilizziamo sono delicati; in caso di gengive infiammate o denti sensibili adattiamo il trattamento e, se necessario, applichiamo prodotti desensibilizzanti.",
+  },
+  {
+    question: "Lo sbiancamento dentale danneggia lo smalto?",
+    answer:
+      "Lo sbiancamento professionale eseguito da un'igienista dentale con prodotti certificati non danneggia lo smalto. Prima dello sbiancamento verifichiamo sempre che denti e gengive siano sani e che sia stata eseguita una detartrasi.",
+  },
+  {
+    question: "Cos'è il trattamento parodontale non chirurgico?",
+    answer:
+      "È la pulizia profonda delle tasche gengivali (scaling e root planing) per rimuovere il tartaro sotto-gengivale e fermare la progressione della parodontite senza intervento chirurgico. Si esegue in una o più sedute con controlli di mantenimento.",
+  },
+  {
+    question: "L'igiene dentale è rimborsata dalla cassa malati in Svizzera?",
+    answer:
+      "L'assicurazione di base LAMal non copre l'igiene dentale, mentre molte assicurazioni complementari dentarie rimborsano una parte dei costi. Rilasciamo una fattura dettagliata da inviare alla propria assicurazione.",
+  },
+]
+
 
 export function IgieneDentale() {
   return (
@@ -27,9 +57,12 @@ export function IgieneDentale() {
             </Badge>
             <span className="h-1 w-8 rounded-full bg-teal" />
           </div>
-          <h2 className="text-balance font-serif text-3xl font-bold text-foreground md:text-4xl">
-            I nostri trattamenti di igiene dentale
-          </h2>
+          <h1 className="text-balance font-serif text-3xl font-bold text-foreground md:text-4xl">
+            Igienista dentale a Lugano: i nostri trattamenti
+          </h1>
+          <p className="mx-auto mt-4 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
+            Martina Rusconi, igienista dentale SSS con oltre vent&apos;anni di esperienza tra Ginevra e Lugano, vi accoglie in Via Nassa 54 per la pulizia professionale dei denti (detartrasi), il trattamento parodontale non chirurgico, lo sbiancamento e l&apos;applicazione del brillantino. Prevenzione personalizzata, strumenti delicati e un approccio umano per un sorriso sano e luminoso.
+          </p>
         </div>
 
         <div className="flex flex-col gap-16 lg:gap-24">
@@ -301,7 +334,7 @@ export function IgieneDentale() {
               <div className="mb-4 flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
                 <p className="text-sm font-semibold text-foreground">Galleria prima e dopo</p>
                 <a
-                  href="https://www.instagram.com/centro_igea_lugano"
+                  href="https://www.instagram.com/studio_rusconi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-sm font-medium text-foreground transition-opacity hover:opacity-80"
@@ -350,6 +383,8 @@ export function IgieneDentale() {
               </p>
             </div>
           </div>
+
+          <ServiceFaq faqs={igieneFaqs} accent="hover:text-teal" />
 
           {/* CTA */}
           <div className="flex justify-center">

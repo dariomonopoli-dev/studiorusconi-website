@@ -5,9 +5,10 @@ import { LightboxGallery } from "@/components/lightbox-gallery"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Galleria | Studio Rusconi",
+  title: "Galleria fotografica dello studio a Lugano",
   description:
     "Galleria fotografica dello Studio Rusconi a Lugano: ambienti, team al lavoro e i nostri trattamenti di igiene dentale e podologia.",
+  alternates: { canonical: "/galleria" },
 }
 
 const photos = [

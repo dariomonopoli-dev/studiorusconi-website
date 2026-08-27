@@ -3,42 +3,54 @@ import { Inter, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { CookieConsent } from '@/components/cookie-consent'
 import { GoogleAdsTag } from '@/components/google-ads-tag'
+import { JsonLd } from '@/components/json-ld'
+import { SITE_URL, SITE_NAME, OG_IMAGE, business, website, graph } from '@/lib/seo'
 import './globals.css'
 
 const _inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const _playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
 
 export const metadata: Metadata = {
-  title: 'Studio Rusconi | Igiene Dentale e Podologia a Lugano',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: 'Studio Rusconi | Igienista dentale e Podologo a Lugano',
+    template: '%s | Studio Rusconi Lugano',
+  },
   description:
-    'Studio Rusconi a Lugano offre servizi di igiene dentale e podologia con un approccio professionale, umano e preciso. Prenota il tuo appuntamento.',
-  generator: 'v0.app',
+    'Studio Rusconi, Via Nassa 54 a Lugano: igiene dentale professionale, sbiancamento, trattamento parodontale e podologia. Igienista dentale SSS e podologo dipl. federale. Prenota online.',
+  applicationName: SITE_NAME,
   keywords: [
-    'igiene dentale Lugano',
-    'podologia Lugano',
-    'sbiancamento dentale Lugano',
     'igienista dentale Lugano',
-    'podologo Lugano',
-    'Studio Rusconi',
+    'igiene dentale Lugano',
     'pulizia denti Lugano',
-    'cura dei piedi Lugano',
     'detartrasi Lugano',
+    'sbiancamento denti Lugano',
     'trattamento parodontale Lugano',
+    'podologo Lugano',
+    'podologia Lugano',
+    'unghia incarnita Lugano',
+    'cura dei piedi Lugano',
+    'Studio Rusconi',
   ],
   openGraph: {
-    title: 'Studio Rusconi | Igiene Dentale e Podologia a Lugano',
+    title: 'Studio Rusconi | Igienista dentale e Podologo a Lugano',
     description: 'Igiene dentale e podologia nel cuore di Lugano. Professionalità, cura e attenzione per ogni paziente.',
-    url: 'https://www.studiorusconi.ch',
-    siteName: 'Studio Rusconi',
+    url: SITE_URL,
+    siteName: SITE_NAME,
     locale: 'it_CH',
     type: 'website',
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'Martina e Paolo Rusconi, Studio Rusconi Lugano' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Studio Rusconi | Igienista dentale e Podologo a Lugano',
+    description: 'Igiene dentale e podologia nel cuore di Lugano.',
+    images: [OG_IMAGE],
   },
   robots: {
     index: true,
     follow: true,
-  },
-  alternates: {
-    canonical: 'https://www.studiorusconi.ch',
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
   icons: {
     icon: [
@@ -59,46 +71,6 @@ export const metadata: Metadata = {
   },
 }
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Dentist',
-  name: 'Studio Rusconi',
-  description: 'Studio specialistico in igiene dentale e podologia nel cuore di Lugano.',
-  url: 'https://www.studiorusconi.ch',
-  telephone: '+41912251240',
-  email: 'info@studiorusconi.ch',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'Via Nassa 54',
-    addressLocality: 'Lugano',
-    postalCode: '6900',
-    addressCountry: 'CH',
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 46.0037,
-    longitude: 8.9511,
-  },
-  openingHoursSpecification: {
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-    opens: '08:00',
-    closes: '18:00',
-  },
-  priceRange: '$$',
-  availableLanguage: ['Italian', 'German', 'French', 'English'],
-  hasOfferCatalog: {
-    '@type': 'OfferCatalog',
-    name: 'Servizi',
-    itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Igiene dentale professionale' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Sbiancamento dentale' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Trattamento parodontale' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Podologia' } },
-    ],
-  },
-}
-
 export const viewport: Viewport = {
   themeColor: '#afc4d9',
   width: 'device-width',
@@ -113,10 +85,7 @@ export default function RootLayout({
   return (
     <html lang="it">
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <JsonLd data={graph(business, website)} />
       </head>
       <body className="font-sans antialiased">
         {children}
