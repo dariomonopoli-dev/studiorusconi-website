@@ -18,7 +18,7 @@ const vcard = [
   "EMAIL;TYPE=WORK:info@studiorusconi.ch",
   "ADR;TYPE=WORK:;;Via Nassa 54;Lugano;;6900;Svizzera",
   "URL:https://studiorusconi.ch",
-  "X-SOCIALPROFILE;TYPE=instagram:https://www.instagram.com/centro_igea_lugano",
+  "X-SOCIALPROFILE;TYPE=instagram:https://www.instagram.com/studio_rusconi",
   "END:VCARD",
   "",
 ].join("\r\n")

@@ -38,7 +38,7 @@ export function Footer() {
               cura e attenzione per ogni paziente.
             </p>
             <a
-              href="https://www.instagram.com/centro_igea_lugano"
+              href="https://www.instagram.com/studio_rusconi"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-opacity hover:opacity-80"
